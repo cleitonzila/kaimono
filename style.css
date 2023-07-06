@@ -1,0 +1,258 @@
+/* Root and base styles */
+:root {
+    --bg-color: #FCD893;
+    --bg-list: #FFF5E2;
+    --btn-color: #D9D9D9;
+    --btn-color-hover: #c6bfbf;
+    --list-color: #FFFFFF;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--list-color);
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    align-items: center;
+    background-color: var(--bg-color);
+    display: flex;
+    height: 7vh;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+/* Main content styles */
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 80vh;
+}
+
+/* Footer styles */
+footer {
+    align-items: center;
+    background-color: var(--list-color);
+    display: flex;
+    flex-direction: row-reverse;
+    height: 13vh;
+    padding: 0 1rem;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin: 6rem 0;
+}
+
+/* Input styles */
+input {
+    background: none;
+    border: none;
+    width: 90%;
+}
+
+/* Button styles */
+button {
+    padding: 0;
+}
+
+/* Unordered list styles */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Image styles */
+li img {
+    height: 15rem;
+    object-fit: cover;
+    width: 15rem;
+}
+
+/* Anchor styles */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Index styles */
+.index {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+/* Shopping list styles */
+.need-to-buy-list {
+    align-items: center;
+    background-color: var(--list-color);
+    box-sizing: border-box;
+    display: flex;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
+    flex-direction: column;
+    font-size: 1.6rem;
+    height: 38rem;
+    padding-top: 2rem;
+    position: relative;
+    width: 30rem;
+    z-index: 1;
+}
+
+/* List title styles */
+.list-title {
+    align-items: center;
+    background-color: var(--list-color);
+    border: solid 1px;
+    border-radius: 4rem;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 100;
+    gap: 1.6rem;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: -2.5rem;
+    width: 25rem;
+    z-index: 2;
+}
+
+/* Button styles */
+.btn {
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 4rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
+    flex-direction: column;
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    text-align: center;
+    width: 30rem;
+}
+
+.btn:hover {
+    background-color: var(--btn-color-hover);
+}
+
+/* Camera list styles */
+.camera-list {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    margin: 3rem 0 0 0;
+    padding: 0;
+}
+
+.camera-list li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Full camera styles */
+.camera-full {
+    height: 24rem;
+    object-fit: cover;
+    width: 32rem;
+}
+
+/* Time styles */
+.time {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+.time > h1 {
+    font-weight: 100;
+    margin: 0;
+}
+
+/* Title wrapper styles */
+.wraper-title {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* Form wrapper styles */
+.wraper-form {
+    display: flex;
+}
+
+/* Input wrapper styles */
+.wraper-input {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Refresh styles */
+.refresh {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Place styles */
+.place {
+    background-color: var(--bg-list);
+    height: 14rem;
+    width: 100vw;
+}
+
+.place p {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+/* Place list styles */
+.place-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Search container styles */
+.search-container {
+    align-items: center;
+    background-color: var(--btn-color);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 0.3rem .5rem;
+    width: 90%;
+}
+
+/* Link styles */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* List wrapper styles */
+.wrapper-list {
+    margin-top: 3rem;
+}
+
+#search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
