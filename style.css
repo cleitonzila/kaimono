@@ -89,7 +89,8 @@ a {
 /* Index styles */
 .index {
     background-color: var(--bg-color);
-    height: 100vh;
+    height: 100%;
+    padding: 2rem 4rem;
 }
 
 /* Shopping list styles */
@@ -251,8 +252,37 @@ a {
     margin-top: 3rem;
 }
 
+.place ul {
+    padding: 0 1rem;
+}
+
+.food {
+    text-align: left;
+}
+
 #search-btn {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.toast {
+    position: fixed;
+    font-size: large;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+.toast.success {
+    background-color: green;
+}
+
+.toast.error {
+    background-color: red;
 }

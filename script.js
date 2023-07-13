@@ -1,24 +1,18 @@
-// Acessa a video stream do dispositivo
-navigator.mediaDevices.getUserMedia({video: true})
-.then(function(stream) {
-    var video = document.getElementById('video');
+const zentaiKau = document.getElementById("zetai-kau")
+const foodList = ["leite", "suco", "banana"]
 
-    // Define a stream de vídeo para a tag de vídeo
-    video.srcObject = stream;
+// Function to add a food item to a list
+function putFoodInList(name) {
+    // Returns a list item string with the food item name
+    return `<li>${name}</li>`;
+}
 
-    // Play the video stream
-    video.play();
-})
-.catch(function(err) {
-    console.error("Ocorreu um erro! " + err);
-});
+// Function to populate the lists
+function populate(){
+    // Generate all the list items as a single string
+    let listItems = foodList.map(element => putFoodInList(element)).join('');
+    // Set the innerHTML of the list to the list items string
+    zentaiKau.innerHTML = listItems;
+}
 
-// Pega o elemento 'snap'
-var canvas = document.getElementById('canvas');
-var context = canvas.getContext('2d');
-var video = document.getElementById('video');
-
-// Adiciona o listener de eventos ao botão
-document.getElementById("snap").addEventListener("click", function() {
-    context.drawImage(video, 0, 0, 640, 480);
-});
+populate()
